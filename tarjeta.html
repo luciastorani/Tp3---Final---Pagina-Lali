@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lali - Entradas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Recursos/Logo Lali Cuadrado.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">TOUR</a>
+                </li>
+                <li>
+                    <a href="tienda.html">TIENDA</a>
+                </li>
+                    <a href="index.html" class="logo">
+                        <img src="Recursos/Logo Lali.png" alt="Lali Logo">
+                    </a>
+                <li>
+                    <a href="lanzamientos.html">LANZAMIENTO</a>
+                </li>
+                <li>
+                    <a href="bio.html">BIO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerPP">
+            <div class="containerPPH">
+                <form action="compra.html" method="GET" id="formulario">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="title">Información de facturación</h3>
+
+                            <div class="input-box">
+                                <span>Nombre del titular</span>
+                                <input type="text" name="cardname" placeholder="Mr. Jacob Aiden" required>
+                            </div>
+                            <div class="input-box">
+                                <span>DNI del Titular</span>
+                                <input type="number" name="expyear" placeholder="99.999.999" required>
+                            </div>
+                            <div class="input-box">
+                                <span>Numero de tarjeta</span>
+                                <input type="number" name="cardnumber" placeholder="1111 2222 3333 4444" required>
+                            </div>
+
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>Vencimiento</span>
+                                    <input type="number" name="expyear" placeholder="20/25" required>
+                                </div>
+                                <div class="input-box">
+                                    <span>CVV</span>
+                                    <input type="number" name="cvv" placeholder="123" required>
+                                </div>
+                            </div>
+
+                            <div class="input-box">
+                                <button type="submit" class="btn">Pagar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="tarjeta.html" method="GET" id="formulario">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="title">Resumen de la compra</h3>
+
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>3X Palco VIP - DIC 16 - Estadio Velez</span>
+                                    <span>($280.000,00)</span>
+                                </div>
+                                <div class="input-box">
+                                    <span>$280.000,00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>Cargo por servicio</span>
+                                </div>
+                                <div class="input-box">
+                                    <span>$28.000,00</span>
+                                </div>
+                            </div>
+                        
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>Total</span>
+                                </div>
+                                <div class="input-box">
+                                    <span>$308.000,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <form action="historial.html" method="GET" id="formulario">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="title">Historial de Compras</h3>
+                        <div class="input-box">
+                            <button type="submit" class="btn">Ver historial</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>© 2025 Lali — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
